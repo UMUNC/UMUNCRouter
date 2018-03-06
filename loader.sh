@@ -27,5 +27,9 @@ then
 	cp /etc/nginx/sites-available/cc.conf /etc/nginx/sites-enabled/;
 fi
 
+if [ $nc = "ec" ]
+then
+        cp /etc/nginx/sites-available/ec.conf /etc/nginx/sites-enabled/;
+fi
 
 nginx -g "daemon off;"
