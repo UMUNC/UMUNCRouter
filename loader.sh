@@ -2,6 +2,11 @@
 # for var in $testt ; do
 # done
 
+if [ $zh = "temp" ]
+then
+        cp /etc/nginx/sites-available/temp.conf /etc/nginx/sites-enabled/;
+fi
+
 if [ $zh = "zh" ]
 then
         cp /etc/nginx/sites-available/zh.conf /etc/nginx/sites-enabled/;
