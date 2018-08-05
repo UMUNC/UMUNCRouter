@@ -42,4 +42,9 @@ then
         cp /etc/nginx/sites-available/ec.conf /etc/nginx/sites-enabled/;
 fi
 
+if [ $crcmunc = "crcmunc" ]
+then
+        cp /etc/nginx/sites-available/crcmunc.conf /etc/nginx/sites-enabled/;
+fi
+
 nginx -g "daemon off;"
