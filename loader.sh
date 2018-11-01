@@ -47,4 +47,9 @@ then
         cp /etc/nginx/sites-available/crcmunc.conf /etc/nginx/sites-enabled/;
 fi
 
+if [ $ivymunc = "ivymunc" ]
+then
+        cp /etc/nginx/sites-available/ivymunc.conf /etc/nginx/sites-enabled/;
+fi
+
 nginx -g "daemon off;"
