@@ -1,6 +1,10 @@
 #!/bin/sh
 # for var in $testt ; do
 # done
+if [ $jn = "jn" ]
+then
+        cp /etc/nginx/sites-available/jn.conf /etc/nginx/sites-enabled/;
+fi
 
 if [ $zh = "temp" ]
 then
