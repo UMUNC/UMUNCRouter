@@ -56,4 +56,9 @@ then
         cp /etc/nginx/sites-available/ivymunc.conf /etc/nginx/sites-enabled/;
 fi
 
+if [ $nc2021 = "nc2021" ]
+then
+        cp /etc/nginx/sites-available/nc2021.conf /etc/nginx/sites-enabled/;
+fi
+
 nginx -g "daemon off;"
