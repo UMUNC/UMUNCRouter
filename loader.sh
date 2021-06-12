@@ -61,4 +61,10 @@ then
         cp /etc/nginx/sites-available/nc2021.conf /etc/nginx/sites-enabled/;
 fi
 
+if [ $ceshi = "ceshi" ]
+then
+        cp /etc/nginx/sites-available/ceshi.conf /etc/nginx/sites-enabled/;
+fi
+
+
 nginx -g "daemon off;"
